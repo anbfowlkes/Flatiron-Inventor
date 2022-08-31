@@ -4,6 +4,11 @@ class ItemsController < ApplicationController
         render json: Item.all
     end
 
+    def show
+        item = Item.find_by(id: params[:id])
+        render json: item
+    end
+
     # we'll do this in the rooms controller
     # def create
     #     item = Item.create!(name: params[:name], quantity: params[:quantity], price: params[:price], image_url: params[:image_url])
@@ -21,10 +26,10 @@ class ItemsController < ApplicationController
         
     end
 
-    def destroy
+    def getridof
         item = Item.find_by!(id: params[:id])
         
-        if item.destroy(item_params)
+        if item.destroy
             render json: item
         else
             render json: {error: item.errors.full_messages}, status: 422   
@@ -33,7 +38,7 @@ class ItemsController < ApplicationController
 
     private
 
-    def blog_params
+    def items_params
         params.permit(:name, :quantity, :price, :image_url)
     end
 
