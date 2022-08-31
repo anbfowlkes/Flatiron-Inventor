@@ -4,21 +4,24 @@ import ItemCard from "./ItemCard"
 
 
 function RoomCard() {
-    const anyArray = [0,1,2,3,4,5,6,7,8,9]
+    const anyArray = [0,1]
 
-const [chairs, setChairs] =useState(0)
-const [tables, setTables] =useState(0)
-const [monitors, setMonitors] =useState(0)
-const [name, setName] =useState('Edith Razor Scooter')
-const [image, setImage] =useState('https://m.media-amazon.com/images/M/MV5BYjEzN2FlYmYtNDkwMC00NGFkLWE5ODctYmE5NmYxNzE2MmRiXkEyXkFqcGdeQXVyMjMwODc5Mw@@._V1_FMjpg_UX1000_.jpg')
+// const [chairs, setChairs] =useState(0)
+// const [tables, setTables] =useState(0)
+// const [monitors, setMonitors] =useState(0)
+const [name, setName] =useState('Turing')
+const [image, setImage] =useState('https://www.officelovin.com/wp-content/uploads/2015/11/flatiron-school-2.jpg')
 
     return (
         <div>
-              <h1 class='room-name'>{name}</h1>
         
         <div class='room-card'>
-          
+        <div>
+        <h2 class='room-name'>{name}</h2>
             <img id='room-image'src={image} />
+            
+            
+        </div>
             <div class='inventory'>
                 {anyArray.map(example => {
                     return(
@@ -26,12 +29,7 @@ const [image, setImage] =useState('https://m.media-amazon.com/images/M/MV5BYjEzN
                     )
                 })}
                
-                {/* <h3 class='item'>chairs: {chairs}</h3>
-                <button onClick={() => {setChairs(chairs - 1)}}>-</button><button onClick={() => {setChairs(chairs + 1)}}>+</button>
-                <h3 class='item'>tables: {tables}</h3>
-                <button onClick={() => {setTables(tables - 1)}}>-</button><button onClick={() => {setTables(tables + 1)}}>+</button>
-                <h3 class='item'>monitors: {monitors}</h3>
-                <button onClick={() => {setMonitors(monitors - 1)}}>-</button><button onClick={() => {setMonitors(monitors + 1)}}>+</button> */}
+               
             </div>
 
         </div>

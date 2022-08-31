@@ -1,15 +1,22 @@
 import React from 'react'
 import RoomCard from './RoomCard.js'
+import Navbar from './Navbar.js'
 
 function HomePage() {
     return (
       <div className="App">
-        <header >
-        <img className="App-header" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/FS_wiki.png/640px-FS_wiki.png" />
+        <Navbar />
+        <header style={{backgroundColor: 'white'}}>
+       
           {/* <h1>Inventory</h1> */}
         </header>
-        <div>
+        
+        <div id="bg">
+          <div>
+          
         <RoomCard />
+         </div>
+          <h1></h1>
         </div>
         <nav>
         </nav>

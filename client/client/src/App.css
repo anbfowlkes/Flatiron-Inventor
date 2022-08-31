@@ -37,39 +37,79 @@
     transform: rotate(360deg);
   }
 } */
+.App {
+  background-image: url("https://www.officelovin.com/wp-content/uploads/2015/11/flatiron-school-2.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height:900px;
+  width:1650px;
+}
+
 
 #room-image {
+  border-radius: 20px;
   padding-top: 10px;
   padding-left: 10px;
-  height: 350px;
-  width: 280px
+  padding-bottom: 10px;
+  height: 480px;
 }
 .room-card{
+  margin-left: 250px;
   display:flex;
   float: left;
-  height: 800px;
-  width:  500px;
+  height: 590px;
+  width:  650px;
   background-color: #54a09e;
   border-color: black;
   border-radius: 20px;
+  box-shadow: 10px
+}
+.room-name{
+  margin-left: 20px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style:italic;
+  color:goldenrod;
+  text-shadow: 3px 4px black;
 }
 .inventory {
+  font-family: serif;
   position: relative;
   float: right;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 .App-header {
   height: 200px;
   width: 600px;
 }
 #item-component {
-  position: relative;
+  background-color:#54a09e;
+  border-radius: 10px;
+  margin-left: 10px;
+  box-shadow: 60px;
+  /* position: relative; */
 }
 #item-card {
-  position: relative;
- float: right;
+  font-family: serif;
+  /* position: relative;
+ float: right; */
 }
 #item-image {
-  height: 25%;
- width: 20%;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 120px;
+  width: 90px;
+}
+#item-stock{
+  margin-left:20px;
+}
+.bg {
+  background-image: url("https://flatironschool.com/wp-content/uploads/2022/01/home-hero-15.svg");
+}
+
+#quantity-button{
+  margin-bottom: 0px;
 }
