@@ -18,7 +18,7 @@ const [image, setImage] =useState('https://www.officelovin.com/wp-content/upload
         <div class='room-card'>
         <div>
         <h2 class='room-name'>{name}</h2>
-            <img id='room-image'src={image} />
+            {/* <img id='room-image'src={image} /> */}
             
             
         </div>

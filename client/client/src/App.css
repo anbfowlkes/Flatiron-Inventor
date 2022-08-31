@@ -55,6 +55,7 @@
 }
 .room-card{
   margin-left: 250px;
+  opacity: 90%;
   display:flex;
   float: left;
   height: 590px;
