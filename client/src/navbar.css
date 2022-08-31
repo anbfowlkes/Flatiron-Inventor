@@ -1,0 +1,13 @@
+#nav-id {
+    /* width: 2200px; */
+    /* background-color: rgba(161, 150, 24, 0.062); */
+    position: relative;
+    background-color: rgb(23, 156, 139);
+  }
+  .navbar-brand {
+    font-size: 40px;
+  }
+  #navbarNav a {
+    font-size: 30px;
+    margin-left: 50px;
+  }
