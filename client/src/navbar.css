@@ -1,6 +1,5 @@
 #nav-id {
-    /* width: 2200px; */
-    /* background-color: rgba(161, 150, 24, 0.062); */
+    width: 100vw;
     position: relative;
     background-color: rgb(23, 156, 139);
   }

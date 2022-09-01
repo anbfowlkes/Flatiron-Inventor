@@ -41,16 +41,14 @@
   /* background-image: url("https://www.officelovin.com/wp-content/uploads/2015/11/flatiron-school-2.jpg"); */
   background-repeat: no-repeat;
   background-size: auto;
-  height:900px;
-  width:1650px;
+  height: 100vh;
+  width: 100vw;
 }
 #welcome{
   color:#93e6e3;
 }
 
-.outer-div {
-  /* border: solid black; */
-}
+
 
 
 #room-image {
@@ -61,19 +59,21 @@
   height: 480px;
 }
 .room-card{
-  margin-left: 250px;
   opacity: 90%;
   display:flex;
   float: left;
-  height: 590px;
-  width:  650px;
+  height: 100vh;
+  width: 100vw;
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
   /* background-color: yellow; */
   border-color: black;
   border-radius: 20px;
   box-shadow: 10px
 }
 .room-name{
-  margin-left: 20px;
+  margin-left: 3vw;
+  margin-top: 3vw;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-style:italic;
@@ -81,9 +81,9 @@
   text-shadow: 3px 4px black;
 }
 .inventory {
+  margin-top:5vh;
   font-family: serif;
-  position: relative;
-  float: right;
+  display: flex;
   padding-left: 10px;
 }
 .App-header {
@@ -95,10 +95,15 @@
   border-radius: 10px;
   margin-left: 10px;
   box-shadow: 60px;
+  height: 45vh;
+  
   /* position: relative; */
 }
 #item-card {
   font-family: serif;
+  display:flex;
+  height: 20vh;
+  width: 100vw;
   /* position: relative;
  float: right; */
 }
