@@ -37,6 +37,16 @@ class RoomsController < ApplicationController
         end
     end
 
+    def item_destroy
+        room = Room.find_by(id: params[:id])
+        item = room.find_by(id: params[:item_id])
+        if item.destroy
+            render json: item
+        else
+            render json: {error: item.error.full_messages}, status: 422
+        end
+    end
+
     # def destroy
     #     item = Item.find_by!(id: params[:id])
     #     if item.destroy
