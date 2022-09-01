@@ -88,10 +88,15 @@
   width: 600px;
 }
 #item-component {
+  width: 200px;
   background-color:#54a09e;
   border-radius: 10px;
   margin-left: 10px;
   box-shadow: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* position: relative; */
 }
 #item-card {

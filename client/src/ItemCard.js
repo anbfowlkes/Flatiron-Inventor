@@ -4,7 +4,7 @@ import EditItem from "./EditItem"
 
 
 
-function ItemCard({ room_id, item_id, name, quantity, price, img_url}) {
+function ItemCard({ roomFetch, room_id, item_id, name, quantity, price, img_url}) {
 
 
 const myItems = {
@@ -30,29 +30,27 @@ const myItems = {
     let req = await fetch(`http://localhost:9000/rooms/${room_id}/items/${item_id}`, {method: "DELETE"})
     let res = await req.json()
     console.log(res)
+    roomFetch()
   }
 
     return (
         <div id="item-component">
-            <div class='item-card'>
-                <div>
-                    <img id='item-image'src={img_url} />
-                    <div id="item-stock">
-                        <h2 class='item-name'>{name}</h2>
-                        <h3>Quantity: {quantity}</h3>
-                        <h3>{`Price: $${price}`}</h3>
-                        {/* <button id="quantity-button" onClick={() => {setDisplayQuantity(displayQuantity - 1)}}>-</button><button onClick={() => {setDisplayQuantity(displayQuantity + 1)}}>+</button> */}
-                    </div>
-                    <div>
-                        <button onClick={updateClick}>Update Item</button>
-                        <button onClick={deleteClick}>Delete Item</button>
-                    </div>
-                    <div>
-                        {showUpdateForm ? <EditItem room_id={room_id} item_id={item_id} /> : null}
-                    </div>
-                </div>
+            <div>
+                <img id='item-image'src={img_url} />
             </div>
-        </div>       
+            <div id="item-stock">
+                <h2 class='item-name'>{name}</h2>
+                <h3>Quantity: {quantity}</h3>
+                <h3>{`Price: $${price}`}</h3>
+            </div>
+            <div>
+                <button onClick={updateClick}>Update Item</button>
+                <button onClick={deleteClick}>Delete Item</button>
+            </div>
+            <div>
+                {showUpdateForm ? <EditItem roomFetch={roomFetch} room_id={room_id} item_id={item_id} /> : null}
+            </div>
+        </div>
     )
 }
 export default ItemCard

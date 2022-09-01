@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-const EditItem = ( {room_id, item_id} ) => {
+const EditItem = ( {roomFetch, room_id, item_id} ) => {
 
 
     const updateName = async (e) => {
@@ -18,6 +18,7 @@ const EditItem = ( {room_id, item_id} ) => {
         })
         let res = await req.json()
         console.log(res)
+        roomFetch()
     }
 
     const updateQuantity = async (e) => {
@@ -34,6 +35,7 @@ const EditItem = ( {room_id, item_id} ) => {
         })
         let res = await req.json()
         console.log(res)
+        roomFetch()
     }
 
     const updatePrice = async (e) => {
@@ -50,6 +52,7 @@ const EditItem = ( {room_id, item_id} ) => {
         })
         let res = await req.json()
         console.log(res)
+        roomFetch()
     }
 
     const updateImage = async (e) => {
@@ -66,6 +69,7 @@ const EditItem = ( {room_id, item_id} ) => {
         })
         let res = await req.json()
         console.log(res)
+        roomFetch()
     }
 
 

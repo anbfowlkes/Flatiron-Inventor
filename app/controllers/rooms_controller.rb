@@ -38,13 +38,21 @@ class RoomsController < ApplicationController
     end
 
     def item_destroy
-        room = Room.find_by(id: params[:id])
-        item = room.find_by(id: params[:item_id])
+        room = Room.find(params[:id])
+        item = room.items.find(params[:item_id])
+        # Could also do:
+        # room = Room.find_by!(id: params[:id])
+        # item = room.items.find_by!(id: params[:item_id])
         if item.destroy
             render json: item
         else
             render json: {error: item.error.full_messages}, status: 422
         end
+    end
+
+    def create_item
+        item = Item.create!(name: params[:name], quantity: params[:quantity], price: params[:price], image_url: params[:image_url], room_id: params[:room_id])
+        render json: item
     end
 
     # def destroy

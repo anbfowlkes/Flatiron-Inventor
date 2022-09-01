@@ -16,8 +16,8 @@ Rails.application.routes.draw do
   get "rooms/:id/items/:item_id", to: "rooms#show_room_item"
 
   patch "/rooms/:id/items/:item_id", to: "rooms#item_update"
-  delete "rooms/:id/items/:item_id", to: "rooms#item_destroy"
-
+  delete "/rooms/:id/items/:item_id", to: "rooms#item_destroy"
+  post "/rooms", to: "rooms#create_item"
 
 
 end
