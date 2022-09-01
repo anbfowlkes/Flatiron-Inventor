@@ -20,14 +20,14 @@ beanbag_price = 30
 beanbag_img = "https://target.scene7.com/is/image/Target/GUEST_886fc488-dbe1-4bc1-8d51-9e3f71a12e3b?wid=488&hei=488&fmt=pjpeg"
 
 puts "Seeding data"
-r1 = Room.create!(name: "Schwartz") # main room
-r2 = Room.create!(name: "Turing")
-r3 = Room.create!(name: "Hopper")
-r4 = Room.create!(name: "Collins") # corner
-r5 = Room.create!(name: "Kay") # hall corner
-r6 = Room.create!(name: "Borge") # phase 5 room
-r7 = Room.create!(name: "Windrazor")
-r8 = Room.create!(name: "Nightingale") # data science
+r1 = Room.create!(name: "Schwartz", img_src: "https://www.officelovin.com/wp-content/uploads/2015/11/flatiron-school-2.jpg") # main room
+r2 = Room.create!(name: "Turing", img_src: "https://i.imgur.com/B6HdeQs.jpeg")
+r3 = Room.create!(name: "Hopper", img_src: "https://i.imgur.com/E1EPNkc.jpeg")
+r4 = Room.create!(name: "Collins", img_src: "https://i.imgur.com/ohctTvS.jpeg") # corner
+r5 = Room.create!(name: "Kay", img_src: "https://i.imgur.com/FciaAxr.jpeg") # hall corner
+r6 = Room.create!(name: "Borge", img_src: "https://i.imgur.com/4uX6zPw.jpeg") # phase 5 room
+r7 = Room.create!(name: "Windrazor", img_src: "https://i.imgur.com/41IpMBm.jpeg")
+r8 = Room.create!(name: "Nightingale", img_src: "https://i.imgur.com/3VhXeW3.jpeg") # data science
 
 
 # Schwartz (main room)
