@@ -50,7 +50,7 @@
 }
 
 .outer-div {
-  
+  position: absolute;
 }
 
 .room-name {
@@ -98,7 +98,10 @@
   margin-top: 5vh;
   font-family: serif;
   display: flex;
+  flex-wrap: wrap;
+  /* width: 90vw; */
   padding-left: 10px;
+  width: 70%;
 }
 
 .App-header {
@@ -107,11 +110,12 @@
 }
 
 #item-component {
-  background-color: #54a09e;
+  background-color: rgb(84,160,158,0.7) ;
   border-radius: 10px;
   margin-left: 10px;
   box-shadow: 60px;
   height: 32vh;
+  /* width: 15%; */
 
   /* position: relative; */
 }
@@ -123,6 +127,7 @@
   width: 100vw;
   /* position: relative;
  float: right; */
+
 }
 
 #item-image {
@@ -152,4 +157,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#item-image {
+  width: 6vw;
 }
