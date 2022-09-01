@@ -44,6 +44,9 @@
   height:900px;
   width:1650px;
 }
+#welcome{
+  color:#93e6e3;
+}
 
 .outer-div {
   /* border: solid black; */

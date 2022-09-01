@@ -25,11 +25,11 @@ function App() {
             
               : <HomePage />
               }
-              <div id='enter'>
+              {/* <div id='enter'>
                 {enterPage ?
                 <button onClick={() => setEnterPage(!enterPage)}>Enter</button> : ''
                 }
-              </div>
+              </div> */}
 
           </Route>
         </Switch>

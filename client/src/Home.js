@@ -12,8 +12,8 @@ function Home() {
       >
         <source src={Sunset} type='video/mp4'/>
       </video>
-      <div className='welcome'>
-        <h1>Welcome to Flatiron Inventory</h1>
+      <div className='welcome'> 
+        <h1 id='welcome'>Welcome to Flatiron Inventory</h1>
         
       </div>
     </div>
