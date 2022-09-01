@@ -102,6 +102,7 @@
   /* width: 90vw; */
   padding-left: 10px;
   width: 70%;
+  
 }
 
 .App-header {
@@ -194,4 +195,12 @@
   width: 100px;
   height: 100px;
   
+}
+
+button {
+  border-radius: 10px;
+}
+
+input {
+  border-radius: 10px;
 }

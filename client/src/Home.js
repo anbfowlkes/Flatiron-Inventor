@@ -13,7 +13,7 @@ function Home() {
         <source src={Sunset} type='video/mp4'/>
       </video>
       <div className='welcome'>
-        <h1>Welcome to Flatiron Inventory</h1>
+        <h1 style={{ color: '#93e6e3'}}>Welcome to Flatiron Inventory</h1>
         
       </div>
     </div>

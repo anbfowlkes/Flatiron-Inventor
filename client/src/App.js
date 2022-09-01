@@ -29,11 +29,7 @@ function App() {
             
               : <HomePage />
               }
-              <div id='enter'>
-                {enterPage ?
-                <button onClick={() => setEnterPage(!enterPage)}>Enter</button> : ''
-                }
-              </div>
+              
 
           </Route>
 
