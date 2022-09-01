@@ -46,7 +46,7 @@ function RoomCard() {
                 <div class='inventory'>
                     {showItems.map((item) => {
                         return(
-                            <ItemCard room_id={showRoom.id} item_id={item.id} name={item.name} quantity={item.quantity} price={item.price} img_url={item.image_url} />
+                            <ItemCard key={item.id} room_id={showRoom.id} item_id={item.id} name={item.name} quantity={item.quantity} price={item.price} img_url={item.image_url} />
                         )
                     })}
                 </div>

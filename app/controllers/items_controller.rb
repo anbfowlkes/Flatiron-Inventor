@@ -9,11 +9,11 @@ class ItemsController < ApplicationController
         render json: item
     end
 
-    # we'll do this in the rooms controller
-    # def create
-    #     item = Item.create!(name: params[:name], quantity: params[:quantity], price: params[:price], image_url: params[:image_url])
-
-    # end
+    
+    def create
+        item = Item.create!(item_params)
+        
+    end
 
     def update
         item = Item.find_by!(id: params[:id])
@@ -38,7 +38,7 @@ class ItemsController < ApplicationController
 
     private
 
-    def items_params
+    def item_params
         params.permit(:name, :quantity, :price, :image_url)
     end
 

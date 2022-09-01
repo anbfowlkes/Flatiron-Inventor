@@ -24,10 +24,13 @@ function Navbar() {
           </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
+              <li  className="nav-items">
+                <a className="nav-link" href="/inventory">Inventory</a>
+              </li>
 
             {allRooms.map((item) => {
               return (
-                <li className="nav-items">
+                <li key={item.id} className="nav-items">
                   <a className="nav-link" href={item.name.toLowerCase()}>{item.name}</a>
                 </li>
               )

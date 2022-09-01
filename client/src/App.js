@@ -4,6 +4,7 @@ import Home from './Home'
 import HomePage from './HomePage'
 import Navbar from './Navbar'
 import RoomCard from './RoomCard'
+import InventoryPage from './InventoryPage'
 import {useState} from 'react'
 import {Switch, Route} from 'react-router-dom'
 
@@ -16,6 +17,9 @@ function App() {
     <div>
       <Navbar />
         <Switch>
+          <Route path="/inventory">
+            <InventoryPage  />
+          </Route>
           <Route path="/:room_name">
             <RoomCard  />
           </Route>
@@ -32,6 +36,7 @@ function App() {
               </div>
 
           </Route>
+
         </Switch>
     </div>
 
