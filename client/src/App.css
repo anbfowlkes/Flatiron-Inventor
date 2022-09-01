@@ -162,3 +162,36 @@
 #item-image {
   width: 6vw;
 }
+.inventory-container {
+  display: flex;
+  justify-content: center;
+}
+.inventory-wrapper {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.inventory-card {
+  width: 250px;
+  height: 300px;
+  background-color: #54a09e;
+  border-radius: 30px;
+  margin: 2em;
+  padding: 1em;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+
+}
+.inventory-content {
+  padding: .7em 0;
+}
+.inventory-image-container {
+  width: 250px;
+  height: 100px;
+}
+.inventory-image {
+  width: 100px;
+  height: 100px;
+  
+}
