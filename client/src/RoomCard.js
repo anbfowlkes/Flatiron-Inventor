@@ -34,16 +34,16 @@ function RoomCard() {
     const [image, setImage] =useState('https://www.officelovin.com/wp-content/uploads/2015/11/flatiron-school-2.jpg')
     
     return (
-        <div>
+        <div className='outer-div'>
         
-            <div class='room-card'>
-                <div>
+            <div class='room-card' style={{ backgroundImage: `url(${showRoom.img_src})` }}>
+                <div >
                     <h2 class='room-name'>{showRoom.name}</h2>
                         {/* <img id='room-image'src={image} /> */}
                         
                         
                 </div>
-                <div class='inventory'>
+                <div class='inventory' style={{ backgroundImage: showRoom.img_src }}>
                     {showItems.map((item) => {
                         return(
                             <ItemCard room_id={showRoom.id} item_id={item.id} name={item.name} quantity={item.quantity} price={item.price} img_url={item.image_url} />

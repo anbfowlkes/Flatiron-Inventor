@@ -38,11 +38,15 @@
   }
 } */
 .App {
-  background-image: url("https://www.officelovin.com/wp-content/uploads/2015/11/flatiron-school-2.jpg");
+  /* background-image: url("https://www.officelovin.com/wp-content/uploads/2015/11/flatiron-school-2.jpg"); */
   background-repeat: no-repeat;
   background-size: auto;
   height:900px;
   width:1650px;
+}
+
+.outer-div {
+  border: solid black;
 }
 
 
@@ -60,7 +64,7 @@
   float: left;
   height: 590px;
   width:  650px;
-  background-color: #54a09e;
+  /* background-color: yellow; */
   border-color: black;
   border-radius: 20px;
   box-shadow: 10px
