@@ -66,7 +66,7 @@ function RoomCard() {
                         <input type="text" placeholder="New Quantity" />
                         <input type="text" placeholder="New Price" />
                         <input type="text" placeholder="New Image URL" />
-                        <input type="submit" value="Update Image" />
+                        <input type="submit" value="Add Item" />
                     </form>
                 </div>
                 <div class='inventory' style={{ backgroundImage: showRoom.img_src }}>

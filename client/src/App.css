@@ -41,12 +41,21 @@
   /* background-image: url("https://www.officelovin.com/wp-content/uploads/2015/11/flatiron-school-2.jpg"); */
   background-repeat: no-repeat;
   background-size: auto;
-  height:900px;
-  width:1650px;
+  height: 100vh;
+  width: 100vw;
+}
+
+#welcome {
+  color: #93e6e3;
 }
 
 .outer-div {
-  /* border: solid black; */
+  
+}
+
+.room-name {
+  font-size: 20px;
+  margin-top: -100px;
 }
 
 
@@ -57,53 +66,65 @@
   padding-bottom: 10px;
   height: 480px;
 }
-.room-card{
-  margin-left: 250px;
+
+.room-card {
   opacity: 90%;
-  display:flex;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   float: left;
-  height: 590px;
-  width:  650px;
+  height: 100vh;
+  width: 100vw;
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
   /* background-color: yellow; */
   border-color: black;
   border-radius: 20px;
   box-shadow: 10px
 }
-.room-name{
-  margin-left: 20px;
-  font-size: 30px;
+
+.room-name {
+  margin-left: 3vw;
+  margin-top: -140px;
+  font-size: 70px;
   font-family: Arial, Helvetica, sans-serif;
-  font-style:italic;
-  color:goldenrod;
+  font-style: italic;
+  color: goldenrod;
   text-shadow: 3px 4px black;
 }
+
 .inventory {
+  margin-top: 5vh;
   font-family: serif;
-  position: relative;
-  float: right;
+  display: flex;
   padding-left: 10px;
 }
+
 .App-header {
   height: 200px;
   width: 600px;
 }
+
 #item-component {
-  width: 200px;
-  background-color:#54a09e;
+  background-color: #54a09e;
   border-radius: 10px;
   margin-left: 10px;
   box-shadow: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 32vh;
+
   /* position: relative; */
 }
+
 #item-card {
   font-family: serif;
+  display: flex;
+  height: 20vh;
+  width: 100vw;
   /* position: relative;
  float: right; */
 }
+
 #item-image {
   border-radius: 10px;
   margin-left: 10px;
@@ -113,13 +134,22 @@
   height: 120px;
   width: 90px;
 }
-#item-stock{
-  margin-left:20px;
+
+#item-stock {
+  margin-left: 20px;
 }
+
 .bg {
   background-image: url("https://flatironschool.com/wp-content/uploads/2022/01/home-hero-15.svg");
 }
 
-#quantity-button{
+#quantity-button {
   margin-bottom: 0px;
+}
+
+#item-component {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
